@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
 
     if (argc != 3) {
         printf("Usage: %s <IP> <port>\n", argv[0]);
-	exit(1);
+	    exit(1);
     }
 
     sock = socket(PF_INET, SOCK_STREAM, 0);  // 创建套接字，此时还不能区分服务端或客户端
