@@ -41,9 +41,9 @@ int main(int argc, char *argv[])
     if (clnt_sock == -1)
         error_handling("accept() error");
 
-    write (clnt_sock, message, sizeof(message));
-    close (clnt_sock);
-    close (serv_sock);
+    write(clnt_sock, message, sizeof(message));
+    close(clnt_sock);
+    close(serv_sock);
     return 0;
 }
 
